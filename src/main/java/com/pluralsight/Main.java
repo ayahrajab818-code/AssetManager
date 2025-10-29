@@ -26,11 +26,17 @@ public class Main {
             System.out.println("Current Value: $" + asset.getValue());
 
 
+
             if (asset instanceof House) {
                 System.out.println("Address: " + house.getAddress());
-            } else if (asset instanceof Vehicle ){
+                System.out.println("lot size: " + house.getLotSize());
+                System.out.println("Sqr FT: " + house.getSquareFoot());
+                System.out.println("condition: " + house.getCondition());
+            }
+            else if (asset instanceof Vehicle ){
                 System.out.println("Make & Model: " + car.getMakeModel());
                 System.out.println("Year: " + car.getYear());
+                System.out.println("Odometer:" + car.getOdometer());
             }
 
             System.out.println("-----------------------------");
